@@ -1,0 +1,9 @@
+USE adlister_db;
+DROP TABLE IF EXISTS users;
+CREATE TABLE users (
+    id INT UNSIGNED NOT NULL AUTO_INCREMENT,
+    username VARCHAR(100) DEFAULT 'NONE',
+    email VARCHAR(125) NOT NULL,
+    password VARCHAR(40) NOT NULL,
+    PRIMARY KEY (id)
+);
